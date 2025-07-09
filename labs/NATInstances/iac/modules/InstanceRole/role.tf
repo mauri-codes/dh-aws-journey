@@ -20,8 +20,3 @@ resource "aws_iam_role_policy_attachment" "instance_role_attach" {
   role       = aws_iam_role.instance_role.name
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
 }
-
-resource "aws_iam_role_policy_attachment" "s3_attach" {
-  role       = aws_iam_role.instance_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"
-}

@@ -27,6 +27,7 @@ resource "aws_vpc_security_group_ingress_rule" "from_alb2" {
 }
 
 resource "aws_vpc_security_group_egress_rule" "internet_access" {
+  count             = var.is_solution ? 1 : 0
   security_group_id = aws_security_group.instance_sg.id
 
   cidr_ipv4   = "0.0.0.0/0"

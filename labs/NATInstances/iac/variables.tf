@@ -15,5 +15,5 @@ variable "KeyPair" {
 
 variable "LabName" {
   type    = string
-  default = "lab03"
+  default = "lab02"
 }

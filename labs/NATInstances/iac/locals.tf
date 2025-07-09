@@ -9,5 +9,4 @@ locals {
   }
   step             = local.steps[var.step]
   is_solution      = local.step == 1
-  app_package_path = "${path.module}/AppInstance"
 }

@@ -37,3 +37,6 @@ variable "route_table_c_id" {
 variable "key_pair" {
   type = string
 }
+variable "instance_sg_id" {
+  type = string
+}

@@ -13,9 +13,6 @@ variable "instance_sg_name" {
 variable "alb_sg_name" {
   type = string
 }
-variable "bucket_name" {
-  type = string
-}
 variable "instance_name" {
   type = string
 }

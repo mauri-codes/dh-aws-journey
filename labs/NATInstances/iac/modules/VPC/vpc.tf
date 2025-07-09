@@ -45,7 +45,6 @@ resource "aws_route_table" "private_rt_a" {
     Name = "${var.private_rt_name}A${var.suffix}"
   }
 }
-
 resource "aws_route_table" "private_rt_b" {
   vpc_id = aws_vpc.vpc.id
   tags = {
